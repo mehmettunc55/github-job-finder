@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  background-color: wheat;
+}
+
+.octocat{
+  position: relative;
+  width:25%;
+  left:280px;
+  top:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

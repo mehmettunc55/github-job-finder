@@ -1,0 +1,27 @@
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    left:250px;
+    top:120px;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom:20px ;
+}
+
+.description,
+.location,
+.search{
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.search{
+    background-color: blue;
+    color: azure;
+}
