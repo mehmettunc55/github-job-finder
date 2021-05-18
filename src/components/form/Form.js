@@ -10,7 +10,7 @@ function Form() {
     const [job, setJob] = useState([]);
     const [description, setDescription] = useState('');
     const [location, setLocation] = useState('');
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
 
     const jobList = () => {
@@ -34,8 +34,8 @@ function Form() {
         setDescription(e.target.value.toUpperCase())
       }
 
-      const handleSearch=()=>{
-          
+      const handleSearch=(e)=>{
+           e.preventDefault()
           setLocation('')
           setDescription('')
           jobList()
@@ -50,16 +50,16 @@ function Form() {
         <button onClick={handleSearch} className='search'>SEARCH</button>
       </div>
     
-    {loading ?  <img  src={loadingLogo} /> : jobList.length < 1 ? <img className="error" src={error} /> :
-        job?.map((job, index) => (
+    {loading ?  <img  src={loadingLogo} /> : job.length < 1 ? <img className="error" src={error} /> :  
+        job?.map((jo, index) => (
         <JobCard 
-        key={index}
-        img={job.company_logo}
-        title={job.title}
-        name={job.company}
-        location={job.location}
-        type={job.type}
-        url={job.company_url}
+      
+        img={jo.company_logo}
+        title={jo.title}
+        name={jo.company}
+        location={jo.location}
+        type={jo.type}
+        url={jo.company_url}
         />
       ))
     }
