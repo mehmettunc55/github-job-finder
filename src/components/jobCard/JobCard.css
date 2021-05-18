@@ -1,0 +1,81 @@
+.card{
+    position: relative;
+    top:150px;
+    height:380px;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px gray;
+    padding-top:15px;
+    border: green 3px solid;
+  }
+  
+  .company-logo{
+    width: 80px;
+    height: 80px;
+  }
+  .logo-div{
+    width: 100px;
+    height: 100px;
+    padding-top:15px;
+    margin: auto;
+    border: none;
+  }
+  .body-title{
+    height: 50px;
+    margin-top: 15px;
+    background-color: rgb(194, 190, 190,.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    color: green;
+  }
+  .body-desc{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .body-type{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .apply{
+    height: 35px;
+    width: 130px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #24A0ED;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: all .5s ease;
+  }
+  .apply:hover{
+    height: 35px;
+    width: 130px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: #24A0ED ;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease;
+    box-shadow: 2px 2px 15px black;
+  }
+  a{
+    text-decoration: none;
+  }
+  .error{
+    margin-bottom: 30px;
+    width: 30%;
+  }
