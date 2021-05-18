@@ -25,3 +25,9 @@ p{
     background-color: blue;
     color: azure;
 }
+
+.loadingLogo{
+    position: relative;
+    left:270px;
+    top:110px;
+}

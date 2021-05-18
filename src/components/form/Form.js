@@ -10,7 +10,8 @@ function Form() {
     const [job, setJob] = useState([]);
     const [description, setDescription] = useState('');
     const [location, setLocation] = useState('');
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
+    const [search, setSearch] = useState()
 
 
     const jobList = () => {
@@ -36,10 +37,13 @@ function Form() {
 
       const handleSearch=(e)=>{
            e.preventDefault()
-          setLocation('')
-          setDescription('')
+           setSearch(true)
+        
           jobList()
+          
       }
+
+      
 
   return (
     <div>
@@ -50,7 +54,7 @@ function Form() {
         <button onClick={handleSearch} className='search'>SEARCH</button>
       </div>
     
-    {loading ?  <img  src={loadingLogo} /> : job.length < 1 ? <img className="error" src={error} /> :  
+    {!search ? null : loading ?  <img  className='loadingLogo' src={loadingLogo} /> : job.length < 1 || (!description && !location) ? <img className="error" src={error} /> :  
         job?.map((jo, index) => (
         <JobCard 
       
